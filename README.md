@@ -5,7 +5,7 @@ My Lab Projects &amp; Documents
 - Applied VLAN segmentation - Isolated IoT devices, work devices, guest devices and protected devices into separate VLANs
 - Enable adblock DNS server and DNS resolver on a network level
 - Setup regional blocking to protect against crawlers and bad actors
-- Self Hosted Server(Services hosted: NAS, AudioBook, Library Server, Reverse proxy, Authentication Service, Tailscale)
+- Self Hosted Server(Services hosted: NAS, AudioBook, Library Server, Photo Library Server, Reverse proxy, Authentication Service, Tailscale)
 - Setup crowdsec service to log and auto-ban bad actors scan/pinging the home network
 - Enable mesh VPN using Tailscale(peer-to-peer connection) to securely connect to home network services remotely
 - Implemented a reverse proxy to manage traffic access between clients and internal services(Allows for local & wan access management to specific server hosted services w/ ACL rules)
@@ -33,5 +33,5 @@ Regional IP blocking applied on all network at the firewall level
 - PocketId(Enables SSO)
 - TinyAuth(forward auth service to enable SSO for non sso compatible services)
 - Reverse Proxy Manager
-- Photo Library
+- Photo Library(Immich, google photos substitute)
 - NAS 
