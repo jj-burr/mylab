@@ -1,7 +1,6 @@
-# My Lab Projects
-My Lab Projects &amp; Documents
+# My HomeLab Projects 
 
-## High Level Home Network Projects
+## High Level Home Projects
 - Applied VLAN segmentation - Isolated IoT devices, work devices, guest devices and protected devices into separate VLANs
 - Enable adblock DNS server and DNS resolver on a network level
 - Setup regional blocking to protect against crawlers and bad actors
