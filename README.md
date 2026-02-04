@@ -20,7 +20,7 @@ Regional IP blocking applied on all network at the firewall level
  5) IoT Network - Limited network speeds, isolated network
 
 ### Network Level AdBlocker and DNS Resolver via [Raspbery Pi 3b+]([url](https://docs.pi-hole.net/))
-- Deployed RaspberryPi with Raspberry Pi OS Lite, Pi-Hole DNS Server and Unbound DNS Resolver installed
+- Deployed RaspberryPi with Raspberry Pi OS Lite, [Pi-Hole DNS Sinkhole]([url](https://docs.pi-hole.net/)) and [Unbound DNS Resolver]([url](https://unbound.docs.nlnetlabs.nl/en/latest/index.html)) installed
 - Manages local DNS records to redirect domain names to local service host
 - Rerouting all client devices within specified vlan to Adblocker as the DNS Server to filter traffic requests based on blocklist
 - Retrieves ip addresses from root authorized DNS servers instead of upstream ISP or third party DNS providers(ensures third party providers from logging browsing history)
@@ -29,9 +29,9 @@ Regional IP blocking applied on all network at the firewall level
 - Audio Book Server(Web Service that uses web socket connection to enable media streaming and sync progress_
 - Library Server(Web Service that supports reading epub, pdf, and cbz file formats)
 - Game Rom Manager and Flash Web Player(Manages game roms by system, can play via web browser, supports remote multi player)
-- Tailscale VPN(Remote connection between registered devices)
+- Wireguard VPN Service([Tailscale]([url](https://tailscale.com/)) - Remote connection between registered devices)
 - PocketId(Enables SSO)
-- TinyAuth(forward auth service to enable SSO for non sso compatible services)
-- Reverse Proxy Manager
-- Photo Library(Immich, google photos substitute)
+- Forward Authentication Service([TinyAuth]([url](https://tinyauth.app/)) - enables SSO for non sso compatible services)
+- Reverse Proxy Manager([Nginx Proxy Manager]([url](https://nginxproxymanager.com/)))
+- Photo Library([Immich]([url](https://immich.app/)) - google photos substitute)
 - NAS 
