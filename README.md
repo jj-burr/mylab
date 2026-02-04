@@ -10,7 +10,9 @@
 - Implemented a reverse proxy to manage traffic access between clients and internal services(Allows for local & wan access management to specific server hosted services w/ ACL rules)
 - Enabled SSO capabilities on hosted services, additional layer of security, registered device that passed ACL needs to have their user info registered within Authentication Service(PocketID)
 
-## VLAN Setup
+## Network Configuration
+
+### VLAN Setup
 Regional IP blocking applied on all network at the firewall level
  1) Protected Network - Manual LAN Assignment, Wifi 5/6Ghz bands, Restricted network for trusted devices, adblock enabled, dns resolved applied
  2) Primary Network - Default LAN,Wifi 5/6 Ghz bands, isolated network, main wifi network, adblock enabled, dns resolved applied
@@ -23,6 +25,8 @@ Regional IP blocking applied on all network at the firewall level
 - Manages local DNS records to redirect domain names to local service host
 - Rerouting all client devices within specified vlan to Adblocker as the DNS Server to filter traffic requests based on blocklist
 - Retrieves ip addresses from root authorized DNS servers instead of upstream ISP or third party DNS providers(ensures third party providers from logging browsing history)
+
+---
 
 ### Services (managed with Docker)
 - Audio Book Server(Web Service that uses web socket connection to enable media streaming and sync progress_
