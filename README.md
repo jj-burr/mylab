@@ -37,4 +37,4 @@ Regional IP blocking applied on all network at the firewall level
 - Forward Authentication Service([TinyAuth]([url](https://tinyauth.app/)) - enables SSO for non sso compatible services)
 - Reverse Proxy Manager([Nginx Proxy Manager]([url](https://nginxproxymanager.com/)))
 - Photo Library([Immich]([url](https://immich.app/)) - google photos substitute)
-- NAS 
+- Network Attached Storage(NAS)
