@@ -1,10 +1,15 @@
 # My Home Lab Projects 
 
-## High Level Home Projects
+## High Level Home Project and Goals
+Primary goals are to replace a few online services and gain new skills and insights in regards to home networking configuration, network/application security, and self hosting.
+- Self host photography and video content manager and backup (1-2 TB of data, ie. google photos/drive)
+- Library web service to manage digital books and audiobook content (Amazon audible books and ebooks)
+- Expand photo/video manager to family members securely (Google photos/drive Family)
+- Secure public facing server services [firewall ip whitelisting, remote vpn, sso, fail2ban]
 - Applied VLAN segmentation - Isolated IoT devices, work devices, guest devices and protected devices into separate VLANs
 - Enable adblock DNS server and DNS resolver on a network level
 - Setup regional blocking to protect against crawlers and bad actors
-- Self Hosted Server(Services hosted: NAS, AudioBook, Library Server, 1TB Photo Library Server, Reverse proxy, Authentication Service, Tailscale)
+- Other self hosted services(Services hosted: NAS, AudioBook, Library Server, 1TB Photo Library Server, Reverse proxy, Authentication Service, Tailscale)
 - Setup crowdsec service to log and auto-ban bad actors scan/pinging the home network
 - Enable mesh VPN using Tailscale(peer-to-peer connection) to securely connect to home network services remotely
 - Implemented a reverse proxy to manage traffic access between clients and internal services(Allows for local & wan access management to specific server hosted services w/ ACL rules)
