@@ -19,11 +19,11 @@ Primary goals are to replace a few online services and gain new skills and insig
 
 ### VLAN Setup
 Regional IP blocking applied on all network at the firewall level
- 1) Protected Network - Manual LAN Assignment, Wifi 5/6Ghz bands, Restricted network for trusted devices, adblock enabled, dns resolved applied
- 2) Primary Network - Default LAN,Wifi 5/6 Ghz bands, isolated network, main wifi network, adblock enabled, dns resolved applied
- 3) Work Network - LAN Only, applied /29 subnet to limit number of usable ip address, limit network speed, isolated network
- 4) Guest Network - WiFi 2.4 Ghz only, limited network speeds, different password, isolated network, force traffic through VPN Service
- 5) IoT Network - Limited network speeds, isolated network
+1) Protected Network - Manual LAN Assignment, Wifi 5/6Ghz bands, Restricted network for trusted devices, adblock enabled, dns resolved applied
+2) Primary Network - Default LAN,Wifi 5/6 Ghz bands, isolated network, main wifi network, adblock enabled, dns resolved applied
+3) Work Network - LAN Only, applied /29 subnet to limit number of usable ip address, limit network speed, isolated network
+4) Guest Network - WiFi 2.4 Ghz only, limited network speeds, different password, isolated network, force traffic through VPN Service
+5) IoT Network - Limited network speeds, isolated network
 
 ### Network Level AdBlocker and DNS Resolver via [Raspbery Pi 3b+]([url](https://docs.pi-hole.net/))
 - Deployed RaspberryPi with Raspberry Pi OS Lite, [Pi-Hole DNS Sinkhole]([url](https://docs.pi-hole.net/)) and [Unbound DNS Resolver]([url](https://unbound.docs.nlnetlabs.nl/en/latest/index.html)) installed
