@@ -34,8 +34,8 @@ Regional IP blocking applied on all network at the firewall level
 ---
 
 ### Hosted Services (managed with Docker)
-- Audio Book Server(Web Service that uses web socket connection to enable media streaming and sync progress_
-- Library Server(Web Service that supports reading epub, pdf, and cbz file formats)
+- Audio Book Server(Web service that uses web socket connection to enable media streaming and sync progress_
+- Library Server(Web service that supports reading epub, pdf, and cbz file formats)
 - Game Rom Manager and Flash Web Player(Manages game roms by system, can play via web browser, supports remote multi player)
 - Wireguard VPN Service([Tailscale]([url](https://tailscale.com/)) - Remote connection between registered devices)
 - PocketId(Enables SSO)
