@@ -1,10 +1,15 @@
-# My HomeLab Projects 
+# My Home Lab Projects 
 
-## High Level Home Projects
+## High Level Home Project and Goals
+Primary goals are to replace a few online services and gain new skills and insights in regards to home networking configuration, network/application security, and self hosting.
+- Self host photography and video content manager and backup (1-2 TB of data, ie. google photos/drive)
+- Library web service to manage digital books and audiobook content (Amazon audible books and ebooks)
+- Expand photo/video manager to family members securely (Google photos/drive Family)
+- Secure public facing server services [firewall ip whitelisting, remote vpn, sso, fail2ban]
 - Applied VLAN segmentation - Isolated IoT devices, work devices, guest devices and protected devices into separate VLANs
 - Enable adblock DNS server and DNS resolver on a network level
 - Setup regional blocking to protect against crawlers and bad actors
-- Self Hosted Server(Services hosted: NAS, AudioBook, Library Server, 1TB Photo Library Server, Reverse proxy, Authentication Service, Tailscale)
+- Other self hosted services(Services hosted: NAS, AudioBook, Library Server, 1TB Photo Library Server, Reverse proxy, Authentication Service, Tailscale)
 - Setup crowdsec service to log and auto-ban bad actors scan/pinging the home network
 - Enable mesh VPN using Tailscale(peer-to-peer connection) to securely connect to home network services remotely
 - Implemented a reverse proxy to manage traffic access between clients and internal services(Allows for local & wan access management to specific server hosted services w/ ACL rules)
@@ -14,11 +19,11 @@
 
 ### VLAN Setup
 Regional IP blocking applied on all network at the firewall level
- 1) Protected Network - Manual LAN Assignment, Wifi 5/6Ghz bands, Restricted network for trusted devices, adblock enabled, dns resolved applied
- 2) Primary Network - Default LAN,Wifi 5/6 Ghz bands, isolated network, main wifi network, adblock enabled, dns resolved applied
- 3) Work Network - LAN Only, applied /29 subnet to limit number of usable ip address, limit network speed, isolated network
- 4) Guest Network - WiFi 2.4 Ghz only, limited network speeds, different password, isolated network, force traffic through VPN Service
- 5) IoT Network - Limited network speeds, isolated network
+1. Protected Network - Manual LAN Assignment, Wifi 5/6Ghz bands, Restricted network for trusted devices, adblock enabled, dns resolved applied
+2. Primary Network - Default LAN,Wifi 5/6 Ghz bands, isolated network, main wifi network, adblock enabled, dns resolved applied
+3. Work Network - LAN Only, applied /29 subnet to limit number of usable ip address, limit network speed, isolated network
+4. Guest Network - WiFi 2.4 Ghz only, limited network speeds, different password, isolated network, force traffic through VPN Service
+5. IoT Network - Limited network speeds, isolated network
 
 ### Network Level AdBlocker and DNS Resolver via [Raspbery Pi 3b+]([url](https://docs.pi-hole.net/))
 - Deployed RaspberryPi with Raspberry Pi OS Lite, [Pi-Hole DNS Sinkhole]([url](https://docs.pi-hole.net/)) and [Unbound DNS Resolver]([url](https://unbound.docs.nlnetlabs.nl/en/latest/index.html)) installed
@@ -29,8 +34,8 @@ Regional IP blocking applied on all network at the firewall level
 ---
 
 ### Hosted Services (managed with Docker)
-- Audio Book Server(Web Service that uses web socket connection to enable media streaming and sync progress_
-- Library Server(Web Service that supports reading epub, pdf, and cbz file formats)
+- Audio Book Server(Web service that uses web socket connection to enable media streaming and sync progress_
+- Library Server(Web service that supports reading epub, pdf, and cbz file formats)
 - Game Rom Manager and Flash Web Player(Manages game roms by system, can play via web browser, supports remote multi player)
 - Wireguard VPN Service([Tailscale]([url](https://tailscale.com/)) - Remote connection between registered devices)
 - PocketId(Enables SSO)
