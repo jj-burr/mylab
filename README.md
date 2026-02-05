@@ -1,4 +1,4 @@
-# My HomeLab Projects 
+# My Home Lab Projects 
 
 ## High Level Home Projects
 - Applied VLAN segmentation - Isolated IoT devices, work devices, guest devices and protected devices into separate VLANs
